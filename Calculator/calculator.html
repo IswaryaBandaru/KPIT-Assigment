@@ -1,1 +1,55 @@
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Calculator using HTML,CSS,JS</title>
+      <link rel="stylesheet" href="stylesheet.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container d-flex flex-items justify-content-center">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" class="styling4">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value ='' "  class="styling2 shadow">
+                    <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)"  class="styling2">
+                    <input type="button" value="." onclick="display.value +='.' "  class="styling2 shadow">
+                    <input type="button" value="/" onclick="display.value +='/' "  class="styling2 shadow">
+
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value +='7' " class="styling shadow" >
+                    <input type="button" value="8" onclick="display.value +='8' "  class="styling shadow">
+                    <input type="button" value="9" onclick="display.value +='9' "  class="styling shadow">
+                    <input type="button" value="*" onclick="display.value +='*' "  class="styling2 shadow">
+
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value +='4' "  class="styling shadow">
+                    <input type="button" value="5" onclick="display.value +='5' "  class="styling shadow">
+                    <input type="button" value="6" onclick="display.value +='6' "  class="styling shadow">
+                    <input type="button" value="-" onclick="display.value +='-' "  class="styling2 shadow">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value +='1' "  class="styling shadow">
+                    <input type="button" value="2" onclick="display.value +='2' "  class="styling shadow">
+                    <input type="button" value="3" onclick="display.value +='3' "  class="styling shadow">
+                    <input type="button" value="+" onclick="display.value +='+' "  class="styling2 shadow">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value +='00' "  class="styling shadow">
+                    <input type="button" value="0" onclick="display.value +='0' "  class="styling shadow">
+                    <input type="button" value="=" onclick="display.value=eval(display.value)" class="equal styling3 shadow">
+        
+                </div>        
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
 
