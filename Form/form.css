@@ -1,0 +1,25 @@
+.container{
+    background-color: rgb(36, 230, 237);
+    height:100vh;
+
+}
+.subcontainer{
+    background-color:white;
+    background-size:cover;
+    font-family:Verdana;
+}
+.head{
+    text-align:center;
+    color:white;
+    font-family:sans-serif;
+
+}
+.nameemail{
+    margin-bottom:15px;
+}
+.align_properties{
+    margin-bottom: 15px;
+}
+.button_prop{
+    font-family:Arial;
+}
